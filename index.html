@@ -6,15 +6,18 @@
   <body>
      <div class="site-title">Veronica Ihrfors</div>
     <div class="main-page"> 
-        <div>
+        <div class="side-bar">
             <div>About Me</div>
             <div>Re-UBE</div>
-            <div>Project</div>
-            <div></div>
+            <div>Projects</div>
         </div>
         <div>
             <div>Projects</div>
-            <div></div>
+            <div class="projects-grid">
+              <ul id="projects-list">
+                
+                </ul>
+            </div>
         </div>
         <div>
             <div>Art</div>
@@ -23,4 +26,12 @@
         </div>
     </div>
   </body>
+  <script>
+  var projects = {["project name", "icon.png"]};
+  var list = document.getElementById("projects-list");
+  
+  for(let i=0; i<projects.length;i++){
+    list.innerhtml += "<li>+projects[i][0]+<img src=projects[i][1]/></li>
+  }
+  </script>
 </html>
